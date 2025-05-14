@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color:black;
+  color:white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  background-image: url('./images/desktop/image-hero.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:100%;
+  height:90vh;
+  padding: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap:605px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top:20px !important;
+}
+.nav{
+  display : flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 25px;
+  width: 40%;
 }
+.immersive{
+  position:absolute;
+  top: 33%;
+  left: 18%;
+  text-transform: uppercase;
+  border: 2px solid hsl(0, 0%, 100%);
+  width: 600px;
+  padding: 25px;
+  padding-right: 10px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.immersive h2{
+   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 58px;
+  letter-spacing: 5px;
+  color: hsl(0, 0%, 100%);
 }
