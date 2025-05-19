@@ -1,54 +1,292 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color:black;
-  color:white;
+
+body {
+  background-color: hsl(0, 0%, 100%);
 }
-.header{
-  background-image: url('./images/desktop/image-hero.jpg');
+
+.header {
+  background: url('./images/desktop/image-hero.jpg');
   background-size: contain;
   background-repeat: no-repeat;
-  width:100%;
-  height:90vh;
+  width: 100%;
+  height: 120vh;
   padding: 20px;
+  color: white;
 }
-.nav-bar{
+
+.header .navbar {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 15px;
   display: flex;
-  flex-direction: row;
-  gap:605px;
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top:20px !important;
-}
-.nav{
-  display : flex;
+  font-size: 15px;
   flex-direction: row;
   align-items: center;
-  gap: 25px;
+  gap: 470px;
+  width: 80%;
+  margin-top: 30px !important;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header .navbar .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   width: 40%;
 }
-.immersive{
-  position:absolute;
-  top: 33%;
-  left: 18%;
-  text-transform: uppercase;
-  border: 2px solid hsl(0, 0%, 100%);
-  width: 600px;
-  padding: 25px;
-  padding-right: 10px;
 
+.immersive {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  border: 2px solid hsl(0, 0%, 100%);
+  width: 550px;
+  padding: 25px;
 }
-.immersive h2{
-   font-family: 'Josefin Sans', sans-serif;
+
+.immersive h2 {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  font-size: 58px;
+  font-size: 55px;
   letter-spacing: 5px;
-  color: hsl(0, 0%, 100%);
+}
+
+.main {
+  background-color: hsl(0, 0%, 100%);
+  height: 180vh;
+}
+
+.main .main2 {
+  height: 100vh;
+}
+
+.main .main2 .vr {
+  width: 60%;
+}
+
+.main .main2 .vr img {
+  position: absolute;
+  top: 120%;
+  left: 5%;
+  z-index: 0;
+}
+
+.main .main2 .leader {
+  position: absolute;
+  top: 150%;
+  right: 9%;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 10;
+  height: 60%;
+  width: 44%;
+  padding: 97px;
+}
+
+.main .main2 .leader h2 {
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: hsl(0, 0%, 0%);
+}
+
+.main .main2 .leader p {
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 20px;
+  color: hsl(0, 1%, 53%);
+  width: 107%;
+}
+
+.main .main3 {
+  padding: 65px;
+}
+
+.main .main3 .creations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main .main3 h2 {
+  text-transform: uppercase;
+  font-family: 'alata', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 0%);
+}
+
+.main .main3 button {
+  border: 2px solid hsl(0, 1%, 53%);
+  padding: 5px;
+  width: 140px;
+  border-radius: 2px;
+  background-color: white;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main .main3 button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.main .main3 button p {
+  font-family: 'alata', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.main .main3 .rows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 180vh;
+  margin-top: 60px;
+}
+
+.main .main3 .rows .row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Card Styles - expanded from the @mixin */
+.main .main3 .rows .row1 .card,
+.main .main3 .rows .row1 .card2,
+.main .main3 .rows .row1 .card3,
+.main .main3 .rows .row1 .card4 {
+  width: 40%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main .main3 .rows .row1 .card:hover::after,
+.main .main3 .rows .row1 .card2:hover::after,
+.main .main3 .rows .row1 .card3:hover::after,
+.main .main3 .rows .row1 .card4:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.main .main3 .rows .row1 .card:hover h3,
+.main .main3 .rows .row1 .card2:hover h3,
+.main .main3 .rows .row1 .card3:hover h3,
+.main .main3 .rows .row1 .card4:hover h3 {
+  color: hsl(0, 0%, 0%);
+}
+
+.main .main3 .rows .row1 .card h3,
+.main .main3 .rows .row1 .card2 h3,
+.main .main3 .rows .row1 .card3 h3,
+.main .main3 .rows .row1 .card4 h3 {
+  font-family: 'alata', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 85%);
+  margin-top: -120px;
+  margin-left: 30px;
+  z-index: 1000;
+  width: 120px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.main .main3 .rows .row1 .card img,
+.main .main3 .rows .row1 .card2 img,
+.main .main3 .rows .row1 .card3 img,
+.main .main3 .rows .row1 .card4 img {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.main .main3 .rows .row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Card Styles for row2 - expanded from the @mixin */
+.main .main3 .rows .row2 .card5,
+.main .main3 .rows .row2 .card6,
+.main .main3 .rows .row2 .card7,
+.main .main3 .rows .row2 .card8 {
+  width: 40%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main .main3 .rows .row2 .card5:hover::after,
+.main .main3 .rows .row2 .card6:hover::after,
+.main .main3 .rows .row2 .card7:hover::after,
+.main .main3 .rows .row2 .card8:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.main .main3 .rows .row2 .card5:hover h3,
+.main .main3 .rows .row2 .card6:hover h3,
+.main .main3 .rows .row2 .card7:hover h3,
+.main .main3 .rows .row2 .card8:hover h3 {
+  color: hsl(0, 0%, 0%);
+}
+
+.main .main3 .rows .row2 .card5 h3,
+.main .main3 .rows .row2 .card6 h3,
+.main .main3 .rows .row2 .card7 h3,
+.main .main3 .rows .row2 .card8 h3 {
+  font-family: 'alata', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 85%);
+  margin-top: -120px;
+  margin-left: 30px;
+  z-index: 1000;
+  width: 120px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.main .main3 .rows .row2 .card5 img,
+.main .main3 .rows .row2 .card6 img,
+.main .main3 .rows .row2 .card7 img,
+.main .main3 .rows .row2 .card8 img {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
